@@ -3,8 +3,5 @@ spring:
     active: dev
   application:
     name: product-service
-  boot:
-    admin:
-      client:
-        url: http://localhost:8081
+
 

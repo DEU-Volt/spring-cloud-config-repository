@@ -1,5 +1,5 @@
 server:
-  port: 7777
+  port: 8080
 
 spring.cloud.gateway.routes:
 - id: product-composite
@@ -8,7 +8,7 @@ spring.cloud.gateway.routes:
   - Path=/product-composite/**
 
 - id: spring-admin
-  uri: http://localhost:8080/
+  uri: http://localhost:8081/
   predicates:
   - Path=/applications
 

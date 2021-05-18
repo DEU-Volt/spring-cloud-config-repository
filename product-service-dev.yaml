@@ -15,4 +15,15 @@ management:
 server:
   port: 18081
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/, http://localhost2:8762/eureka/
 
+      register-with-eureka: false
+      fetch-registry: false
+    initialInstanceInfoReplicationIntervalSeconds: 5
+    registryFetchIntervalSeconds: 5
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 5

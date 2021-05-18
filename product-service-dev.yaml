@@ -8,10 +8,5 @@ spring:
       client:
         url: http://localhost:8081
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
 server:
   port: 18081

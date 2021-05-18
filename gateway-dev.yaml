@@ -10,9 +10,9 @@ spring.cloud.gateway.routes:
 - id: spring-admin
   uri: lb://spring-admin
   predicates:
-  - Path=/applications
+  - Path=/spring-admin/{segment}
   filters:
-  - SetPath=/
+  - SetPath=/{segment}
 
 - id: eureka-api
   uri: lb://eureka-server

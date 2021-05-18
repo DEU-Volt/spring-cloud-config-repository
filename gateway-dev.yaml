@@ -15,9 +15,9 @@ spring.cloud.gateway.routes:
 - id: eureka-api
   uri: http://localhost:8761
   predicates:
-    - Path=/eureka/api/{segment}
+    - Path=/eureka/api/
   filters:
-    - SetPath=/{segment}
+    - SetPath=/
 
 eureka:
   client:

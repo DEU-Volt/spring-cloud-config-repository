@@ -2,10 +2,10 @@ server:
   port: 8080
 
 spring.cloud.gateway.routes:
-- id: product-composite
-  uri: lb://product-composite
+- id: product-service
+  uri: lb://product-service
   predicates:
-  - Path=/product-composite/**
+  - Path=/product-service/**
 
 - id: spring-admin
   uri: http://localhost:8081/

@@ -10,7 +10,7 @@ spring.cloud.gateway.routes:
 - id: spring-admin-api
   uri: lb://spring-admin
   predicates:
-    - Path=/**
+    - Path=/{segment}
   filter:
     - SetPath=/**
 

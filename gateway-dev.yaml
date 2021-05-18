@@ -17,7 +17,7 @@ spring.cloud.gateway.routes:
   predicates:
     - Path=/eureka/api/{segment}
   filters:
-    - SetPath=/eureka/{segment}
+    - SetPath=/{segment}
 
 eureka:
   client:

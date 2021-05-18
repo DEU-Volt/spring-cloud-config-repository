@@ -17,8 +17,6 @@ spring.cloud.gateway.routes:
   uri: http://localhost:8761/
   predicates:
   - Path=/eureka/
-  filters:
-  - SetPath=/
 
 eureka:
   client:

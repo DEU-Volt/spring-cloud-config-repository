@@ -12,7 +12,7 @@ spring.cloud.gateway.routes:
   predicates:
   - Path=/applications
   filters:
-  - SetPath=/{segment}
+  - SetPath=/
 
 - id: eureka-api
   uri: lb://eureka-server

@@ -19,6 +19,12 @@ zuul:
       serviceId: swagger-server
       stripPrefix: true
       url: swagger-server
+    
+    authorization-service:
+      path: /user/**, /oauth/**
+      serviceId: authorization-server
+      stripPrefix: false
+      url: authorization-server
   sensitiveHeaders: Cookie,Set-Cookie
 
 

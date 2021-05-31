@@ -1,5 +1,10 @@
 server:
-  port: 8080
+  port: 8443
+  ssl:
+    key-store-type: PKCS12
+    key-store: classpath:keystore/edge.p12
+    key-store-password: deuvolt
+    key-alias: localhost
 
 spring.cloud.gateway.routes:
 - id: product-service

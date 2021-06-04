@@ -13,7 +13,13 @@ zuul:
       serviceId: product-service
       stripPrefix: false
       url: product-service
-
+      
+    order-service:
+      path: /order/**
+      serviceId: order-service
+      stripPrefix: false
+      url: order-service
+      
     swagger-service:
       path: /api/**
       serviceId: swagger-server
